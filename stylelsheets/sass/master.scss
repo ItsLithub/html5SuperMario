@@ -25,6 +25,18 @@ body{
   animation-duration: 50s;
 }
 
+#flower{
+  height: 168px;
+  width: 95px;
+  background-size: contain;
+  background: url('imgs/flower_1.png') no-repeat;
+  position: fixed;
+  bottom: 128px;
+  left: 300px;
+  //background-color: black;
+
+}
+
 //**********CLASSES*******
 
 .cloud{
@@ -52,4 +64,10 @@ body{
   100%{
     transform: translateX(0px);
   }
+}
+
+@keyframes chompingFlower {
+  0%{background-image: url('imgs/flower_1.png');}
+  100%{background-image: url('imgs/flower_1.png');}
+  //100%{background-image: url('imgs/flower_1.png');}
 }

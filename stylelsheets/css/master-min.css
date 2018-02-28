@@ -1,1 +1,1 @@
-body{height:100vh;width:100vw;font-family:sans-serif;background:linear-gradient(#1c8dff, #85eaef)}
+body{height:100vh;width:100vw;font-family:sans-serif;background:linear-gradient(#1c8dff, #85eaef)}#ground{height:128px;width:100vw;background:url("imgs/groundTile.jpg") repeat-x;background-size:128px;position:fixed;left:0;bottom:0}

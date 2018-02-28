@@ -20,3 +20,36 @@ body{
   left: 0;
   bottom: 0;
 }
+
+#c1{
+  animation-duration: 50s;
+}
+
+//**********CLASSES*******
+
+.cloud{
+  height: 125px;
+  width: 125px;
+  background: url('imgs/cloudTile.png') no-repeat;
+  background-size: 125px;
+  position: relative;
+  top: 50px;
+  left: 150px;
+  animation-name: movingCloud;
+  animation-duration: 75s;
+  animation-iteration-count: infinite;
+}
+
+//*******ANIMATIONS***********
+
+@keyframes movingCloud{
+  0%{
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateX(400px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}

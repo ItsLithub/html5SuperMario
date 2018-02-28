@@ -25,16 +25,25 @@ body{
   animation-duration: 50s;
 }
 
+#c2{
+  animation-duration: 75s;
+}
+
+#c3{
+  animation-duration: 99s;
+}
+
 #flower{
   height: 168px;
   width: 95px;
-  background-size: contain;
-  background: url('imgs/flower_1.png') no-repeat;
+  background: no-repeat;
+  background-size: cover;
   position: fixed;
   bottom: 128px;
-  left: 300px;
-  //background-color: black;
-
+  right: 300px;
+  animation-name: chompingFlower, movingFlower;
+  animation-duration: .5s, 3s;
+  animation-iteration-count: infinite;
 }
 
 //**********CLASSES*******
@@ -48,7 +57,6 @@ body{
   top: 50px;
   left: 150px;
   animation-name: movingCloud;
-  animation-duration: 75s;
   animation-iteration-count: infinite;
 }
 
@@ -68,6 +76,18 @@ body{
 
 @keyframes chompingFlower {
   0%{background-image: url('imgs/flower_1.png');}
+  50%{background-image: url('imgs/flower_2.png');}
   100%{background-image: url('imgs/flower_1.png');}
-  //100%{background-image: url('imgs/flower_1.png');}
+}
+
+@keyframes movingFlower{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-128px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }

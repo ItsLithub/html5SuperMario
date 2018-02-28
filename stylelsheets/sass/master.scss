@@ -42,16 +42,26 @@ body{
   top: 9vw;
 }
 
+#p1{
+bottom: $groundTileDim - 90px;
+right: 750px;
+}
+
+#p2{
+bottom: $groundTileDim - 10px;
+right: 270px;
+}
+
 #flower{
   height: 168px;
   width: 95px;
   background: no-repeat;
   background-size: cover;
   position: fixed;
-  bottom: 128px;
+  bottom: 140px;
   right: 300px;
   animation-name: chompingFlower, movingFlower;
-  animation-duration: .5s, 3s;
+  animation-duration: .3s, 3s;
   animation-iteration-count: infinite;
 }
 
@@ -64,6 +74,14 @@ body{
   left: 150px;
   animation-name: movingCloud;
   animation-iteration-count: infinite;
+}
+
+.pipe{
+  background: url('imgs/pipeTile.png') no-repeat;
+  background-size: contain;
+  height: 325px;
+  width: 150px;
+  position: fixed;
 }
 
 //*******ANIMATIONS***********
@@ -90,8 +108,11 @@ body{
   0%{
     transform: translateY(0px);
   }
+  25%{
+    transform: translateY(-278px);
+  }
   50%{
-    transform: translateY(-128px);
+    transform: translateY(-278px);
   }
   100%{
     transform: translateY(0px);

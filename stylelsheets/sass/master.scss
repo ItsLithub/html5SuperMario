@@ -65,6 +65,25 @@ right: 270px;
   animation-iteration-count: infinite;
 }
 
+#mario{
+  background: url('imgs/mario.png') no-repeat;
+  background-size: contain;
+  width: 75px;
+  height: 250px;
+  position: fixed;
+  top: 400px;
+  right: 790px;
+  transition: .1s;
+  z-index: 1;
+  opacity: 0;
+  &:hover{
+    transition: .1s;
+    transform: translateY(-50px);
+    z-index: -1;
+    opacity: 1;
+  }
+}
+
 //**********CLASSES*******
 
 .cloud{
